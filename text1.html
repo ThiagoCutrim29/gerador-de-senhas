@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="text1.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.0/themes/base/jquery-ui.css" />
+    <script src="http://code.jquery.com/jquery-1.8.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.0/jquery-ui.js"></script>
+    
+</head>
+
+<body>
+    <main class="content">
+        <h2>Selecione o Nivel de Segurança</h2>
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="inputState"></label>
+                    <select id="inputNivel">
+                        <option selected value="0" >SELECIONE</option>
+                        <option value="1">FRACA</option>
+                        <option value="2">PADRÃO </option>
+                        <option value="3">FORTE</option>
+                    </select>
+                </div>
+            </div>
+        </form>
+        <button class="btn-gerar" onclick="Gerar()">GERAR NOVA SENHA</button>
+
+        <div id="container-password" class="container-password hide">
+            <span class="idsenha">Sua Senha Gerada Foi:</span>
+            <span id="password" class="password"></span>
+
+        </div>
+        <a href="index.html">
+        <button id="voltar"><--voltar</button>
+        </a>
+
+
+    </main>
+<script src="text1.js"></script>
+</body>
+
+</html>
